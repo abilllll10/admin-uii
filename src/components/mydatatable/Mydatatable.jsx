@@ -76,23 +76,6 @@ const rows = [{
     ,
 ];
 
-/*const actionColumn = [
-  {
-    field: "action",
-    headerName: "Action",
-    width: 200,
-    renderCell: () => {
-      return (
-        <div className="cellAction">
-          <Link to="/categories/test" style={{ textDecoration: "none" }}>
-            <div className="viewButton">View</div>
-          </Link>
-        </div>
-      );
-    },
-  },
-];*/
-
 const Mydatatable = () => {
     return (<div className="mydatatable" > <div className="mydatatableTitle" > All Data </div> <DataGrid rows={
         rows
