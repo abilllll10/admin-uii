@@ -6,7 +6,7 @@ import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import Mylist from "./pages/mylist/Mylist";
 import Widget from "./components/widget/Widget";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import { productInputs, userInputs } from "./formsource";
 import "./style/dark.scss";
 import { useContext } from "react";
@@ -48,7 +48,7 @@ function App() {
           </Route>
           <Route path="categories">
               <Route path="widget" element={<Widget />}></Route>
-              <Route index element={<RequireAuth><MyList /></RequireAuth>}></Route>
+              <Route index element={<Mylist />}></Route>
             </Route>
           </Route>
         </Routes>
